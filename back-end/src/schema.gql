@@ -1,0 +1,23 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Application {
+  id: String!
+  company: String!
+  title: String!
+  deadline: String!
+  requirements: String!
+  source: String!
+  location: String!
+}
+
+type Query {
+  applications: [Application!]!
+}
+
+type Mutation {
+  addBlankApplication: Application!
+  updateApplication(id: String!, field: String!, value: String!): Application!
+  deleteApplication(id: String!): Boolean!
+}
